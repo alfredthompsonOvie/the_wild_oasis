@@ -26,7 +26,7 @@ function DashboardLayout() {
 
   if (isLoadingBookings || isLoadingStays || isLoadingCabins) return <Spinner />
   
-  console.log(bookings)
+  
   return (
     <StyledDashboardLayout>
       <Stats bookings={bookings} confirmedStays={confirmedStays} numDays={numDays} cabinCount={cabins.length} />
